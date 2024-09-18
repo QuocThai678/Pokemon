@@ -53,9 +53,11 @@ const App: React.FC = () => {
                 <PokemonCollections pokemons={pokemons} />
                 {nextPokemons ? (
                     loading ? (
-                        <div className="loading">
-                            <p>Loading</p>
-                            <img src="https://f.top4top.io/p_1990j031.gif" alt="loading" />
+                        <div className="overlay">
+                            <div className="loading">
+                                <p>Loading</p>
+                                <img src="https://f.top4top.io/p_1990j031.gif" alt="loading" />
+                            </div>
                         </div>
                     ) : (
                         <button onClick={loadMore}>Load More</button>
