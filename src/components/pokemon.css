@@ -4,7 +4,6 @@
     font-weight: 600;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
     margin-top: 60px;
 }
 
@@ -105,6 +104,7 @@
 @media (min-width: 768px) {
     .collection-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
 
     .pokemon-list-detailed {
@@ -115,6 +115,7 @@
 @media (min-width: 1024px) {
     .collection-container {
         grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
     }
     .pokemon-list-detailed {
         left: 24%;
