@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Pokemon } from './interface';
 import './App.css';
+import loadingGif from './assets/loading.gif';
 
 interface Pokemons {
     name: string;
@@ -56,7 +57,7 @@ const App: React.FC = () => {
                         <div className="overlay">
                             <div className="loading">
                                 <p>Loading</p>
-                                <img src="https://f.top4top.io/p_1990j031.gif" alt="loading" />
+                                <img src={loadingGif} alt="loading" />
                             </div>
                         </div>
                     ) : (
